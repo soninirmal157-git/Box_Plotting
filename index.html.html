@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .con{
+            height: 600px;
+            width: 800px;
+            background-color: teal;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin: auto;
+
+
+        }
+
+        .box{
+            height: 80%;
+            width: 80%;
+            background-color: skyblue;
+        }
+
+        .box1{
+            height: 70%;
+            width: 80%;
+            margin: 50px 0px 0px 40px;
+            padding: 50px 0 0 40px;
+            border: 20px solid navy;
+            background-color: blue;
+        }
+
+        
+        .box2{
+            height: 70%;
+            width: 80%;
+            background-color: orange;
+            line-height: 150px;
+        }
+
+        .box>.margin{
+            position: absolute;
+            top: 100px;
+            text-align: center;
+            left: 715px;
+           
+        }
+
+        .box1>.border{
+            position: absolute;
+            top: 140px;
+            left: 715px;
+            color: white;
+        } 
+
+         .box1>.padding{
+            position: absolute;
+            top: 180px;
+            left: 715px;
+            color: white;
+            
+        }
+
+        .box2>.content{
+            position: absolute;
+            top: 170px;
+            left: 480px;
+            color: black;
+            line-height: 120px;
+            align-items: center;
+        }
+
+        
+      
+        
+    </style>
+</head>
+<body>
+    <h1 align="center">Box Plotting</h1>
+    <div class="con">
+        <div class="box">
+            <p1 class="margin">margin</p1>
+            <div class="box1">
+                <p class="border">border</p>
+                <p class="padding">padding</p>
+                <div class="box2">
+                    <p align="center">Content</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
